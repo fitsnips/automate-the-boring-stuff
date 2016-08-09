@@ -55,3 +55,4 @@ fabric.properties
 # *.ipr
 /.gtm/
 loggfile.log
+/errorInfo.txt
