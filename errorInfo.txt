@@ -2,11 +2,3 @@ Traceback (most recent call last):
   File "/Users/jmiller/PycharmProjects/automate-the-boring-stuff/errorTracebackLog.py", line 5, in <module>
     raise Exception('This is a error message')
 Exception: This is a error message
-Traceback (most recent call last):
-  File "/Users/jmiller/PycharmProjects/automate-the-boring-stuff/errorTracebackLog.py", line 5, in <module>
-    raise Exception('This is a error message')
-Exception: This is a error message
-Traceback (most recent call last):
-  File "/Users/jmiller/PycharmProjects/automate-the-boring-stuff/errorTracebackLog.py", line 5, in <module>
-    raise Exception('This is a error message')
-Exception: This is a error message
