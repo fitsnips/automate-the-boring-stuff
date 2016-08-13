@@ -55,3 +55,5 @@ fabric.properties
 # *.ipr
 /.gtm/
 loggfile.log
+/examples/RomeoAndJuliet.txt
+examples/RomeoAndJuliet.txt
