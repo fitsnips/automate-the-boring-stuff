@@ -17,7 +17,7 @@ print(res.text[:250])
 # unicode
 playFile = open('./examples/RomeoAndJuliet.txt', 'wb')
 for chunk in res.iter_content(100000):
-    playfile.write(chunk)
+    playFile.write(chunk)
 playFile.close()
 
 res = requests.get('https://automatetheboringstuff.com/files/page_that_does_not_exist.txt')
