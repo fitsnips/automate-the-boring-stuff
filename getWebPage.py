@@ -13,6 +13,13 @@ len(res.text)
 
 print(res.text[:250])
 
+# save to a file but must be 'wb' write binary to save
+# unicode
+playFile = open('./examples/RomeoAndJuliet.txt', 'wb')
+for chunk in res.iter_content(100000):
+    playfile.write(chunk)
+playFile.close()
+
 res = requests.get('https://automatetheboringstuff.com/files/page_that_does_not_exist.txt')
 
 # check for errors, this should raise a error
