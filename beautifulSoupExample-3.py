@@ -1,6 +1,11 @@
 #! python3
 
-import requests, bs4, webbrowser
+import requests, bs4, webbrowser, logging
+
+# log format
+logging.basicConfig(filename='logging/loggfile.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
 
 # search ebay for "safe"
 res = requests.get('https://www.ebay.com/sch/i.html?_nkw=safe')
@@ -20,10 +25,15 @@ links = exampleSoup.select('.lvtitle a')
 # select must be bad as we are returning more then 50
 # and default items per a page is 50
 # TODO: clean up select
+logging.debug('Number of #links: %s' % (str(len(links))) )
+
 if len(links) > 50:
     print('At least fifty items found')
+    logging.debug('Content of #links: %s' % (str(links)))
 else:
     print('Number if items found %s ' % len(links))
 
 # open up a webbrowser with the first search result
 webbrowser.open(links[0].get('href'))
+
+logging.shutdown()
