@@ -3,7 +3,7 @@
 import requests, bs4, webbrowser, logging
 
 # log format
-logging.basicConfig(filename='logging/loggfile.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='logging/ebay-logfile.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
 

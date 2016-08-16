@@ -57,5 +57,5 @@ fabric.properties
 loggfile.log
 /examples/RomeoAndJuliet.txt
 examples/RomeoAndJuliet.txt
-/logging/loggfile.log
+/logging/ebay-logfile.log
 logging/
