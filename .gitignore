@@ -59,3 +59,6 @@ loggfile.log
 examples/RomeoAndJuliet.txt
 /logging/ebay-logfile.log
 logging/
+
+# ingore output of downloadXkcd.py
+xkcd/*.png
